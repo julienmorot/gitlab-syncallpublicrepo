@@ -5,7 +5,7 @@ import requests
 import json
 import os
 from git import Repo
-import git
+import git.exc
 
 API_URL = 'https://gitlab.com/api/v4'
 USER = 'julienmorot'
