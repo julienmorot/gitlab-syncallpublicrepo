@@ -11,7 +11,7 @@ API_URL = 'https://gitlab.com/api/v4'
 USER = 'julienmorot'
 PROJECTS_PATH = '/mnt/c/Users/julie/Google Drive/repos'
 
-r = requests.get(API_URL + '/users/'+USER+'/projects?simple=true&owned=true')
+r = requests.get(API_URL + '/users/'+USER+'/projects?per_page=100&simple=true&owned=true')
 json=r.json()
 
 for repo in json:
